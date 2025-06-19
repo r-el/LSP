@@ -31,6 +31,11 @@ namespace LSP_Exercises
             Console.WriteLine();
             
             TestExercise3();
+            
+            Console.WriteLine("=".PadRight(50, '='));
+            Console.WriteLine();
+            
+            TestExercise3Fixed();
         }
         
         static void TestExercise1()
@@ -115,6 +120,12 @@ namespace LSP_Exercises
         {
             Console.WriteLine("Exercise 3: Can't Export to PDF - LSP Violation");
             DocumentClient.DemonstrateProblem();
+        }
+        
+        static void TestExercise3Fixed()
+        {
+            Console.WriteLine("Exercise 3: FIXED VERSION - Interface Segregation for Export Capabilities");
+            LSP_Exercises.Fixed.FixedDocumentClient.DemonstrateFixedSolution();
         }
     }
 }
