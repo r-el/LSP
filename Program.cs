@@ -26,6 +26,11 @@ namespace LSP_Exercises
             Console.WriteLine();
             
             TestExercise2Fixed();
+            
+            Console.WriteLine("=".PadRight(50, '='));
+            Console.WriteLine();
+            
+            TestExercise3();
         }
         
         static void TestExercise1()
@@ -104,6 +109,12 @@ namespace LSP_Exercises
         {
             Console.WriteLine("Exercise 2: FIXED VERSION - Separate Square and Rectangle classes");
             LSP_Exercises.Fixed.FixedShapeClient.DemonstrateFixedSolution();
+        }
+        
+        static void TestExercise3()
+        {
+            Console.WriteLine("Exercise 3: Can't Export to PDF - LSP Violation");
+            DocumentClient.DemonstrateProblem();
         }
     }
 }
