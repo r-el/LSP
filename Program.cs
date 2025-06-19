@@ -21,6 +21,11 @@ namespace LSP_Exercises
             Console.WriteLine();
             
             TestExercise2();
+            
+            Console.WriteLine("=".PadRight(50, '='));
+            Console.WriteLine();
+            
+            TestExercise2Fixed();
         }
         
         static void TestExercise1()
@@ -93,6 +98,12 @@ namespace LSP_Exercises
         {
             Console.WriteLine("Exercise 2: Square vs Rectangle - LSP Violation");
             RectangleClient.DemonstrateProblem();
+        }
+        
+        static void TestExercise2Fixed()
+        {
+            Console.WriteLine("Exercise 2: FIXED VERSION - Separate Square and Rectangle classes");
+            LSP_Exercises.Fixed.FixedShapeClient.DemonstrateFixedSolution();
         }
     }
 }
