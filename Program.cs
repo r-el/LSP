@@ -16,6 +16,11 @@ namespace LSP_Exercises
             Console.WriteLine();
             
             TestExercise1Fixed();
+            
+            Console.WriteLine("=".PadRight(50, '='));
+            Console.WriteLine();
+            
+            TestExercise2();
         }
         
         static void TestExercise1()
@@ -82,6 +87,12 @@ namespace LSP_Exercises
             
             Console.WriteLine();
             Console.WriteLine("✅ LSP is now respected! Birds can be substituted without breaking functionality.");
+        }
+        
+        static void TestExercise2()
+        {
+            Console.WriteLine("Exercise 2: Square vs Rectangle - LSP Violation");
+            RectangleClient.DemonstrateProblem();
         }
     }
 }
